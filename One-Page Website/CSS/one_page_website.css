@@ -1,0 +1,114 @@
+#home{
+    font-size: medium;
+    color: rgb(0, 195, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    background-color: rgb(53, 53, 78);
+}
+
+.nav {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container{
+    max-height: 340px;
+    margin: 0% auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.menu{
+    color: azure;
+    font: bold 14px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li{
+    color: azure;
+    background-color: (255, 255, 255);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid pink;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pic {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2cm;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.pic-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 169px;
+}
+
+.pic-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
+.pic-overlay {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.pic-overlay{
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pic-overlay:hover{
+    opacity: 1;
+}
+
+.pic img{
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.pic:hover img {
+    transform: scale(1.1);
+}
+
+.sign-ups{
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid cyan;
+    border-radius: 6px;
+
+}
