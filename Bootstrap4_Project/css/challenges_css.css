@@ -1,0 +1,33 @@
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.text{
+    color: rgb(167, 12, 12);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 75%);
+}
+
+.container{
+    text-align: center;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        background-color: red;
+    }
+    p {
+        color: blue;
+    }
+}
+
