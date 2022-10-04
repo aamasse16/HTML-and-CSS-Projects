@@ -1,75 +1,32 @@
-#home{
-    font-size: medium;
-    color: rgb(0, 195, 255);
-    font-family: 'Courier New', Courier, monospace;
+html {
+    background-color: antiquewhite;
 }
-
-html{
-    background-color: rgb(53, 53, 78);
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
 }
-
-.nav {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    text-align: center;
+  
+* {
+    box-sizing: border-box;
 }
-
-.menu-container{
-    max-height: 340px;
-    margin: 0% auto;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-
-.menu{
-    color: azure;
-    font: bold 14px sans-serif;
-    text-align: center;
-    display: inline;
-    margin: 0% auto;
-    padding: 0;
-    list-style: none;
-}
-
-.menu li{
-    color: azure;
-    background-color: (255, 255, 255);
-    display: inline-block;
-    margin: 0% auto;
-    position: relative;
-    padding: 15px 4%;
-    border: 1px solid pink;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-/*Starting of lightbox*/
-
+  
 .row > .column {
     padding: 0 8px;
-  }
+}
   
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* Create four equal columns that floats next to eachother */
-  .column {
+.column {
     float: left;
-    width: 24.1%;
-  }
+    width: 25%;
+}
   
-  /* The Modal (background) */
-  .modal {
+/* The Modal (background) */
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -80,43 +37,46 @@ html{
     height: 100%;
     overflow: auto;
     background-color: black;
-  }
+}
   
-  /* Modal Content */
-  .modal-content {
+/* Modal Content */
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
-  }
+}
   
   /* The Close Button */
-  .close {
+.close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
+}
   
-  /* Hide the slides by default */
-  .mySlides {
+.mySlides {
     display: none;
-  }
+}
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
+.cursor {
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -130,50 +90,53 @@ html{
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
   
-  /* Number text (1/3 etc) */
-  .numbertext {
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
   
-  /* Caption text */
-  .caption-container {
+img {
+    margin-bottom: -4px;
+}
+  
+.caption-container {
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
-  }
+}
   
-  img.demo {
+.demo {
     opacity: 0.6;
-  }
+}
   
-  .active,
-  .demo:hover {
+.active,
+.demo:hover {
     opacity: 1;
-  }
+}
   
-  img.hover-shadow {
+img.hover-shadow {
     transition: 0.3s;
-  }
+}
   
-  .hover-shadow:hover {
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}

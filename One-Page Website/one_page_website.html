@@ -35,70 +35,69 @@
 			<div id="gallery">
 				<h1>Gallery</h1>
 				<div>
-					<!--Images used in lightbox-->
-					<div class="row">	
-						<div class="column">
-							<img src="./Images/Thumb/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of walking out of the tunnel onto the field.">
-						</div>
-						<div class="column">
-							<img src="./Images/Thumb/thumbnail_3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of our new signing Erling Haaland.">
-						</div>
-						<div class="column">
-							<img src="./Images/Thumb/thumbnail_2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture above the walk out tunnel with the stadium filled.">
-						</div>
-						<div class="column">
-							<img src="./Images/Thumb/thumbnail_5.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of out team hoisting the trophy.">
-						</div>
-					</div>
+					<h2 style="text-align:center">Lightbox</h2>
 
-					<!--The Modal/Lightbox-->
-					<div id="myModal" class="modal">
-						<span class="close-cursor" onclick="closeModal()">&times;</span>
-						<div class="modal-content">
+<div class="row">
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
 
-							<div class="mySlides">
-								<div class="numbertext">1 / 4</div>
-								<img src="" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">2 / 4</div>
-								<img src="" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">3 / 4</div>
-								<img src="" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">4 / 4</div>
-								<img src="./Images/Thumb/" style="width:100%">
-							</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-							<!--Next/Previous Controls-->
-							<a class="prev" onclick="plusSlides(-1)">&#10094</a>
-							<a class="next" onclick="plusSlides(1)">&#10095</a>
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Images/Thumb/thumbnail_1.jpg" style="width:100%">
+    </div>
 
-							<!--Caption Text-->
-							<div class="caption-container">
-								<p id="caption"></p>
-							</div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Images/Thumb/thumbnail_3.jpg" style="width:100%">
+    </div>
 
-							<!--Thumbnai image controls-->
-							<div class="column">
-								<img src="./Images/Thumb/thumbnail_1.jpg" class="demo" onclick="currentSlide(1)" alt="">
-							</div>
-							<div class="column">
-								<img src="./Images/Thumb/thumbnail_3.jpg" class="demo" onclick="currentSlide(2)" alt="">
-							</div>
-							<div class="column">
-								<img src="./Images/Thumb/thumbnail_2.jpg" class="demo" onclick="currentSlide(3)" alt="">
-							</div>
-							<div class="column">
-								<img src="./Images/Thumb/thumbnail_5.jpg" class="demo" onclick="currentSlide(4)" alt="">
-							</div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Images/Thumb/thumbnail_2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Images/Thumb/thumbnail_5.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-						</div>
-					</div>
-		
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
 		<!--FOOTER-->
 		<div>
 		www.machestercityfans.com &nbsp;|&nbsp; &copy; 2022
