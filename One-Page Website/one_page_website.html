@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 	</head>
 	<link rel="stylesheet" href="../One-Page Website/CSS/one_page_website.css">
+	<script src="./JS/one_page_project.js" defer></script>
 	<body>
 	
 		<!--Nav-->
@@ -34,94 +35,69 @@
 			<div id="gallery">
 				<h1>Gallery</h1>
 				<div>
-					
-					<!--PHOTO CONTAINER 1-->
-					<div class="pic-container">
-						<div class="pic">
-							<img src="./images/thumb/thumbnail_1.jpg" alt="Picture of walking out of the tunnel onto the field.">
-							<div class="pic-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Sign up to stay updated!</p>
+					<!--Images used in lightbox-->
+					<div class="row">	
+						<div class="column">
+							<img src="./Images/Thumb/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of walking out of the tunnel onto the field.">
+						</div>
+						<div class="column">
+							<img src="./Images/Thumb/thumbnail_3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of our new signing Erling Haaland.">
+						</div>
+						<div class="column">
+							<img src="./Images/Thumb/thumbnail_2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture above the walk out tunnel with the stadium filled.">
+						</div>
+						<div class="column">
+							<img src="./Images/Thumb/thumbnail_5.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Picture of out team hoisting the trophy.">
+						</div>
+					</div>
+
+					<!--The Modal/Lightbox-->
+					<div id="myModal" class="modal">
+						<span class="close-cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 4</div>
+								<img src="" style="width:100%">
 							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 1-->
-					
-					<!--PHOTO CONTAINER 2-->
-					<div class="pic-container">
-						<div class="pic">
-							<img src="./images/thumb/thumbnail_2.jpg" alt="Picture of our new signing Erling Haaland.">
-							<div class="pic-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Sign up to stay updated!</p>
+							<div class="mySlides">
+								<div class="numbertext">2 / 4</div>
+								<img src="" style="width:100%">
 							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 2-->
-					
-					<!--PHOTO CONTAINER 3-->
-					<div class="pic-container">
-						<div class="pic">
-							<img src="./images/thumb/thumbnail_3.jpg" alt="Picture above the walk out tunnel with the stadium filled.">
-							<div class="pic-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Sign up to stay updated!</p>
+							<div class="mySlides">
+								<div class="numbertext">3 / 4</div>
+								<img src="" style="width:100%">
 							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 3-->
-					
-					
-					<!--VIDEO CONTAINER 1-->
-					<div>
-						<div>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/dzdAPWZIHrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>We have plenty of content daily, sign up to stay updated!</p>
+							<div class="mySlides">
+								<div class="numbertext">4 / 4</div>
+								<img src="./Images/Thumb/" style="width:100%">
 							</div>
+
+							<!--Next/Previous Controls-->
+							<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+							<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+							<!--Caption Text-->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!--Thumbnai image controls-->
+							<div class="column">
+								<img src="./Images/Thumb/thumbnail_1.jpg" class="demo" onclick="currentSlide(1)" alt="">
+							</div>
+							<div class="column">
+								<img src="./Images/Thumb/thumbnail_3.jpg" class="demo" onclick="currentSlide(2)" alt="">
+							</div>
+							<div class="column">
+								<img src="./Images/Thumb/thumbnail_2.jpg" class="demo" onclick="currentSlide(3)" alt="">
+							</div>
+							<div class="column">
+								<img src="./Images/Thumb/thumbnail_5.jpg" class="demo" onclick="currentSlide(4)" alt="">
+							</div>
+
 						</div>
 					</div>
-					<!--END VIDEO CONTAINER 1-->
-					
-					
-					
-				</div>
-			</div>
-		</section>
-		<!--END GALLERY-->
-		
-		<!--SIGN UP-->
-		<section>
-			<div id="members">
-				<div>
-					<h1>Sign ups</h1>
-					<div>
-						<h2><span>Always stay up tp date on Manchester City.</span>
-							<br />Sign Up Today!
-						</h2>
-						<p>
-							Please provide us with your basic information.
-						</p>
-						<div>
-							<form action="" method="post">
-								<input class="sign-ups" type="text" value="First Name">
-								<input class="sign-ups" type="text" value="Last Name">
-								<input class="sign-ups" type="text" value="Email">
-								<input class="sign-ups" type="text" value="Phone Number">
-								<div class="form-spacer">
-									<lable class="terms">Terms and Conditions</lable>
-								</div>
-								<div>
-									<input type="submit" value="Submit">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--END SIGN UP-->
 		
 		<!--FOOTER-->
 		<div>
